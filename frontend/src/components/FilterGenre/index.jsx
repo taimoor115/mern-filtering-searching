@@ -25,10 +25,10 @@ const FilterGenre = ({ genres, params, setParams }) => {
   }, [selectedGenres, setParams]);
 
   return (
-    <div className="flex flex-col gap-y-4 px-4 md:px-8">
+    <div className="flex flex-col flex-wrap  gap-y-4 px-4 md:px-8">
       <h1 className="text-2xl font-bold">Select Movie Genres</h1>
       <form>
-        <div className="flex gap-x-5">
+        <div className="flex flex-wrap basis-24 items-center gap-x-5">
           {genres &&
             genres?.map((genre, index) => (
               <div key={index} className="flex gap-x-1.5">
